@@ -126,13 +126,18 @@
 
 
         </div>
+        <div class="arrow-down">
+            <a href="#" id="scrollIcon">
+                <i aria-hidden="true" class="fas fa-angle-down"></i>
+            </a>
+        </div>
     </section>
 
 
 
     <!-- form section  -->
 
-    <section class="form-section">
+    <section class="form-section" id="formSection">
         <div class="d-flex form-row" style="width: 100%;">
             <div class="left-section">
                 <div class="text-end p-3">
@@ -527,6 +532,22 @@
         <!-- <span class="screen-reader-text">Scroll to Top</span> -->
     </div>
 
+    <div class="left-bar" data-aos="fade-down" data-aos-duration="2000">
+        <div class="bar">
+            <a href="">
+                <i class="fas fa-phone-alt"></i>
+            </a>
+            <a href="">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="">
+                <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+    </div>
 
 
     <!-- Bootstrap JS (optional) -->
@@ -586,6 +607,23 @@
             }
         });
     </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Smooth scroll to form section
+            document.getElementById('scrollIcon').addEventListener('click', function (event) {
+                event.preventDefault();
+
+                const formSection = document.getElementById('formSection');
+                const offset = formSection.offsetTop;
+
+                window.scrollTo({
+                    top: offset,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
