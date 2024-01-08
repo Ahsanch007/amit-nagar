@@ -128,7 +128,7 @@ body {
     transition-timing-function: cubic-bezier(.58,.3,.005,1);
     transform: scale(1);
 }
-.menu-list ul li a:hover:before{
+.menu-list ul li a:hover:before {
     content: "";
     height: 2px;
     top: -10px;
@@ -140,9 +140,11 @@ body {
     position: absolute;
     transition: .3s;
     transition-timing-function: cubic-bezier(.58,.3,.005,1);
-    transform: scale(1);
+    transform: translateY(-3px);
+    opacity: 0; /* Initially invisible */
 }
-.menu-list ul li a:hover:after{
+
+.menu-list ul li a:hover:after {
     content: "";
     height: 2px;
     bottom: -10px;
@@ -154,9 +156,72 @@ body {
     position: absolute;
     transition: .3s;
     transition-timing-function: cubic-bezier(.58,.3,.005,1);
-    transform: scale(1);
+    transform: translateY(3px);
+    opacity: 0; /* Initially invisible */
 }
 
+.menu-list ul li a:hover:before,
+.menu-list ul li a:hover:after {
+    opacity: 1; /* Make the line visible on hover */
+    transform: translateY(0); /* Reset the transform for the fade-in effect */
+}
+
+
+
+
+.slick-dots li.slick-active button:before {
+    color: #5CE0E0; /* Change this to your desired color */
+}
+.elementor-testimonial__cite{
+    margin-top: 25px;
+    font-size: 1.3em;
+    font-style: italic;
+    line-height: 1.5;
+    color: #707070;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: #7A7A7A;
+}
+.carouser-des p{
+    font-size: 1.3em;
+    font-style: italic;
+    line-height: 1.5;
+    color: #707070;
+    margin-bottom: 30px;
+}
+.slider-section{
+    padding: 50px 40px;
+}
+
+.owl-carousel {
+    margin: 20px;
+}
+
+.owl-prev,
+.owl-next {
+    font-size: 24px;
+    color: #000;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    display: inline-block;
+    margin: 0 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #999;
+    cursor: pointer;
+}
+
+.owl-dot.active {
+    background-color: #000;
+}
 
 /* hero-section */
 
@@ -671,6 +736,10 @@ width: 245px
     
     .mob-navigation.open {
         transform: translateX(0);
+    }
+    .mob-immgg{
+        justify-content: center;
+        flex-direction: column-reverse;
     }
 .cross{
     color: #707070;
