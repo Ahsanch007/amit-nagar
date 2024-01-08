@@ -151,10 +151,19 @@ body {
     line-height: 1.5;
     color: #707070;
 }
-.slick-prev:before,
-.slick-next:before {
-  color: #7A7A7A;
-}
+.slick-prev:before {
+    content: "<";
+    color: #707070;
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  
+  .slick-next:before {
+    content: ">";
+    color: #707070;
+    font-size: 30px;
+    font-weight: bolder;
+  }
 .carouser-des p{
     font-size: 1.3em;
     font-style: italic;
@@ -689,7 +698,9 @@ width: 245px
      }
      .hero-section{
         background-image: url('../images/Amit-Banner-mobile.png');
-        min-height: 75vh
+        min-height: 75vh;
+        padding: 30px 0px;
+        
      }
      .hero-content h1, .hero-content h2{
         color: black;
@@ -718,7 +729,7 @@ width: 245px
     }
 .cross{
     color: #707070;
-    font-size: 15px;
+    font-size:30px;
     position: absolute;
     right: 15px;
 }
@@ -742,7 +753,7 @@ width: 245px
 .mob-list ul li a{
     color: #000;
     font-weight: 600;
-    font-family: 24px;
+    font-size: 24px;
     padding: 20px 15px;
     text-decoration: none;
 }
