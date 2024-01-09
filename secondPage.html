@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="he">
+<html lang="he" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
@@ -65,34 +65,38 @@
     <header class="header-section">
         <div class="container">
             <div class="d-flex logo-header mb-3">
-                <a href="" class="phone2">
-                    <i aria-hidden="true" class="fas fa-phone-alt"></i>
+                <a class="burger" id="burgerIcon">
+                    <i aria-hidden="true" class="fas fa-bars"></i>
                 </a>
                 <a href="" class="logo">
 
                     <img src="./assets/images/Amit-nagar-logo.jpeg" alt="">
                 </a>
-                <a class="burger" id="burgerIcon">
-                    <i aria-hidden="true" class="fas fa-bars"></i>
+
+                <a href="" class="phone2">
+                    <i aria-hidden="true" class="fas fa-phone-alt"></i>
                 </a>
             </div>
             <div class="navbar justify-content-center">
                 <nav class="menu-list">
                     <ul>
+                        <li class=" r"><a href="index.html">
+                                עמוד הבית
+                            </a></li>
+                        <li class="active "><a href="#">
+                                מחירים
+                            </a></li>
+                        <li><a href="thirdPage.html">
+                                אודות
+                            </a></li>
                         <li>
                             <a href="fouthpage.html" class="">
                                 צור קשר
                             </a>
                         </li>
-                        <li><a href="thirdPage.html">
-                                אודות
-                            </a></li>
-                        <li class="active "><a href="#">
-                                מחירים
-                            </a></li>
-                        <li class=" r"><a href="index.html">
-                                עמוד הבית
-                            </a></li>
+
+
+
                     </ul>
                 </nav>
             </div>
@@ -113,15 +117,10 @@
             <div>
 
 
-                <h4 class="elementor-heading-title text-end" style="direction: rtl;">
+                <h4 class="elementor-heading-title ">
                     תוכנית "new you"
                 </h4>
                 <div class="d-flex flex-wrap mob-immgg">
-                    <div class="col-md-5">
-                        <div class="text-center">
-                            <img src="./assets/images/beforeandafter-1024x987.jpeg" width="234px" height="225px" alt="">
-                        </div>
-                    </div>
                     <div class="col-md-7">
                         <div class="elementor-widget-container text-end">
                             <p style="font-weight: 400;">
@@ -138,6 +137,12 @@
                                 מלאה של למה ואיך עושים כל דבר, ולא רק את הפרטים הטכניים של מה עושים.</p>
                         </div>
                     </div>
+                    <div class="col-md-5">
+                        <div class="text-center">
+                            <img src="./assets/images/beforeandafter-1024x987.jpeg" width="234px" height="225px" alt="">
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </main>
@@ -156,52 +161,6 @@
                 </div>
             </div>
             <div class=" d-flex flex-wrap">
-                <div class="col-md-4 p-0 col-12">
-                    <div class="card-1 w-100 h-100 ">
-                        <div class="header-2 text-center">
-                            <h3>
-                                פגישה ראשונית כללית
-                            </h3>
-                            <p>
-
-                                תקבלו כלים בנושאי תזונה וכושר בהם תוכלו לעשות שימוש בדרך שלכם, לפי הבעיות בהם אתם
-                                מרגישים שנתקלתם.
-                            </p>
-                        </div>
-                        <div class="price text-center">
-                            <div class="uael-pricing-value d-flex align-items-start">
-
-                                <span class="uael-price-table-currency">₪</span>
-                                <span class="uael-price-table-integer-part">300</span>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-12">
-                    <div class="card-2 w-100 h-100">
-                        <div class="header-2 text-center">
-                            <h3 class="text-white">
-                                פגישה ראשונית ובניית תוכנית new you
-                            </h3>
-                            <p class="text-white">
-
-                                אשאל אתכם על הרקע שלכם, הרגלים תזונתיים, ושגרת היומיום לפרטים, ואבנה לכם תוכנית אימון
-                                ותזונה המתאימות לכם באופן אישי, ואתן לכם מספר כלים התחלתיים להתמדה בתוכנית.
-
-
-                            </p>
-                        </div>
-                        <div class="price text-center">
-                            <div class="uael-pricing-value d-flex align-items-start">
-
-                                <span class="uael-price-table-currency">₪</span>
-                                <span class="uael-price-table-integer-part text-white">600</span>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="col-md-4 col-12">
                     <div class="card-1 w-100 h-100 ">
                         <div class="header-2 text-center">
@@ -228,6 +187,53 @@
                     </div>
                 </div>
 
+                <div class="col-md-4 col-12">
+                    <div class="card-2 w-100 h-100">
+                        <div class="header-2 text-center">
+                            <h3 class="text-white">
+                                פגישה ראשונית ובניית תוכנית new you
+                            </h3>
+                            <p class="text-white">
+
+                                אשאל אתכם על הרקע שלכם, הרגלים תזונתיים, ושגרת היומיום לפרטים, ואבנה לכם תוכנית אימון
+                                ותזונה המתאימות לכם באופן אישי, ואתן לכם מספר כלים התחלתיים להתמדה בתוכנית.
+
+
+                            </p>
+                        </div>
+                        <div class="price text-center">
+                            <div class="uael-pricing-value d-flex align-items-start">
+
+                                <span class="uael-price-table-currency">₪</span>
+                                <span class="uael-price-table-integer-part text-white">600</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 p-0 col-12">
+                    <div class="card-1 w-100 h-100 ">
+                        <div class="header-2 text-center">
+                            <h3>
+                                פגישה ראשונית כללית
+                            </h3>
+                            <p>
+
+                                תקבלו כלים בנושאי תזונה וכושר בהם תוכלו לעשות שימוש בדרך שלכם, לפי הבעיות בהם אתם
+                                מרגישים שנתקלתם.
+                            </p>
+                        </div>
+                        <div class="price text-center">
+                            <div class="uael-pricing-value d-flex align-items-start">
+
+                                <span class="uael-price-table-currency">₪</span>
+                                <span class="uael-price-table-integer-part">300</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
@@ -247,17 +253,19 @@
                 </div>
             </div>
             <div class=" d-flex flex-wrap">
-                <div class="col-md-4 p-0 col-12">
+                <div class="col-md-4 col-12">
                     <div class="card-1 w-100 h-100 ">
                         <div class="header-2 text-center">
                             <h3>
-                                ליווי + מעקב חודשי בזום
+                                ליווי + מעקב כל שבועיים בזום
 
                             </h3>
                             <p>
 
                                 הליווי כולל הודעות ועדכונים בווצאפ, עדכון תוכניות במידת הצורך, סרטוני טכניקה ובדיקת
-                                התקדמות, ופגישה אחת לחודש בה נסכם את החודש ונקבע יעדים ומטרות לחודש הבא.
+                                התקדמות, ופגישה אחת לשבועיים בה נסכם אותם ונקבע יעדים ומטרות לחודש הבא.
+
+
 
 
                             </p>
@@ -266,7 +274,7 @@
                             <div class="uael-pricing-value d-flex align-items-start">
 
                                 <span class="uael-price-table-currency">₪</span>
-                                <span class="uael-price-table-integer-part">350</span>
+                                <span class="uael-price-table-integer-part">400</span>
 
                             </div>
                         </div>
@@ -299,19 +307,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-12">
+                <div class="col-md-4 p-0 col-12">
                     <div class="card-1 w-100 h-100 ">
                         <div class="header-2 text-center">
                             <h3>
-                                ליווי + מעקב כל שבועיים בזום
+                                ליווי + מעקב חודשי בזום
 
                             </h3>
                             <p>
 
                                 הליווי כולל הודעות ועדכונים בווצאפ, עדכון תוכניות במידת הצורך, סרטוני טכניקה ובדיקת
-                                התקדמות, ופגישה אחת לשבועיים בה נסכם אותם ונקבע יעדים ומטרות לחודש הבא.
-
-
+                                התקדמות, ופגישה אחת לחודש בה נסכם את החודש ונקבע יעדים ומטרות לחודש הבא.
 
 
                             </p>
@@ -320,12 +326,13 @@
                             <div class="uael-pricing-value d-flex align-items-start">
 
                                 <span class="uael-price-table-currency">₪</span>
-                                <span class="uael-price-table-integer-part">400</span>
+                                <span class="uael-price-table-integer-part">350</span>
 
                             </div>
                         </div>
                     </div>
                 </div>
+
 
             </div>
         </div>
@@ -345,44 +352,7 @@
 
             </div>
             <div class="d-flex align-items-center flex-wrap" style="padding: 40px 0px;">
-                <div class="col-md-6 col-12">
-                    <div class="d-flex justify-content-center">
-                        <div class="phone text-center">
-                            <a href="#">
-                                <span>
-                                    054-9986887
-                                </span>
-                                <span class="elementor-icon-list-icon">
-                                    <i aria-hidden="true" class="fas fa-phone" style="color: #707070;"></i>
-                                </span>
-                            </a>
-                            <a href="#">
-                                <span>
-                                    @happyheartamit
-                                </span>
-                                <span class="elementor-icon-list-icon">
-                                    <i aria-hidden="true" class="fab fa-instagram" style="color: #707070;"></i>
-                                </span>
-                            </a>
-                            <a href="#">
-                                <span>
-                                    @happyheartamit
-                                </span>
-                                <span class="elementor-icon-list-icon">
-                                    <i aria-hidden="true" class="fab fa-tiktok" style="color: #707070;"></i>
-                                </span>
-                            </a>
-                            <a href="#">
-                                <span>
-                                    @happyheartamit
-                                </span>
-                                <span class="elementor-icon-list-icon">
-                                    <i aria-hidden="true" class="fab fa-youtube" style="color: #707070;"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+
                 <div class="col-md-6 col-12">
                     <form action="">
                         <div class=" eliment-filed my-3">
@@ -421,6 +391,48 @@
                         </button>
                     </div>
                 </div>
+                <div class="col-md-6 col-12">
+                    <div class="d-flex justify-content-center">
+                        <div class="phone text-center">
+                            <a href="#">
+                                <span class="elementor-icon-list-icon">
+                                    <i aria-hidden="true" class="fas fa-phone" style="color: #707070;"></i>
+                                </span>
+                                <span>
+                                    054-9986887
+                                </span>
+
+                            </a>
+                            <a href="#">
+                                <span class="elementor-icon-list-icon">
+                                    <i aria-hidden="true" class="fab fa-instagram" style="color: #707070;"></i>
+                                </span>
+                                <span>
+                                    happyheartamit@
+                                </span>
+
+                            </a>
+                            <a href="#">
+                                <span class="elementor-icon-list-icon">
+                                    <i aria-hidden="true" class="fab fa-tiktok" style="color: #707070;"></i>
+                                </span>
+                                <span>
+                                    happyheartamit@
+                                </span>
+
+                            </a>
+                            <a href="#">
+                                <span class="elementor-icon-list-icon">
+                                    <i aria-hidden="true" class="fab fa-youtube" style="color: #707070;"></i>
+                                </span>
+                                <span>
+                                    happyheartamit@
+                                </span>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -432,10 +444,20 @@
         <div class="container">
             <div class="d-flex justify-content-center">
                 <div class="d-flex gap-4">
+
+
                     <span class="elementor-grid-item">
-                        <a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-993ef04"
-                            href="" target="_blank">
-                            <i class="fab fa-instagram"></i> </a>
+                        <a class="elementor-icon elementor-social-icon elementor-social-icon-phone-alt elementor-repeater-item-f4f16ac"
+                            target="_blank">
+                            <!-- <span class="elementor-screen-only">Phone-alt</span> -->
+                            <i class="fas fa-phone-alt"></i> </a>
+                    </span>
+
+                    <span class="elementor-grid-item">
+                        <a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-a1c64d4"
+                            href="h" target="_blank">
+                            <!-- <span class="elementor-screen-only">Youtube</span> -->
+                            <i class="fab fa-youtube"></i> </a>
                     </span>
                     <span class="elementor-grid-item">
                         <a class="elementor-icon elementor-social-icon elementor-social-icon-tiktok elementor-repeater-item-a229ff5"
@@ -444,17 +466,12 @@
                             <i class="fab fa-tiktok"></i> </a>
                     </span>
                     <span class="elementor-grid-item">
-                        <a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-a1c64d4"
-                            href="h" target="_blank">
-                            <!-- <span class="elementor-screen-only">Youtube</span> -->
-                            <i class="fab fa-youtube"></i> </a>
+                        <a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-993ef04"
+                            href="" target="_blank">
+                            <i class="fab fa-instagram"></i> </a>
                     </span>
-                    <span class="elementor-grid-item">
-                        <a class="elementor-icon elementor-social-icon elementor-social-icon-phone-alt elementor-repeater-item-f4f16ac"
-                            target="_blank">
-                            <!-- <span class="elementor-screen-only">Phone-alt</span> -->
-                            <i class="fas fa-phone-alt"></i> </a>
-                    </span>
+
+
                 </div>
 
             </div>
