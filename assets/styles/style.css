@@ -300,6 +300,7 @@ body {
    line-height: 1.25em;
    font-size: 2rem;
    margin-bottom: 20px;
+   direction: rtl;
 
 }
 .left-section{
@@ -389,6 +390,7 @@ textarea:focus {
     margin-bottom: 1.6em;
     color: #7A7A7A;
     font-size: 20px;
+    direction: rtl;
 }
 .content-right{
    width: 60%;
@@ -436,17 +438,16 @@ outline: 0;
     border-top-right-radius:2px;
   }
   .accordion-item:first-of-type .accordion-button{
-    flex-direction: row-reverse;
     border-bottom: 1px solid #d5d8dc;
 
   }
   .accordion-button{
-    flex-direction: row-reverse;
     justify-content: space-between;
     font-size: 20px;
     font-weight: 400;
     color: #7A7A7A;
-    text-align: end;
+    text-align: right;
+    direction: rtl;
     
 
 
@@ -669,6 +670,7 @@ margin-bottom: 20px;
         background: white;
         top: 0;
         left: 0;
+        z-index: 9999;
     }
     .left-bar{
         display: none;
