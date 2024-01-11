@@ -739,6 +739,7 @@ width: 245px
     
     .mob-navigation.open {
         transform: translateX(0);
+            z-index: 10001;
     }
     .mob-immgg{
         justify-content: center;
